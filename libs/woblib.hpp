@@ -46,6 +46,12 @@ namespace woblib {
             end = std::chrono::steady_clock::now();
             return;
         }
+        auto hourSteady() {
+            return std::chrono::duration_cast<std::chrono::hours>(end - start).count()
+        }
+        auto minuteSteady() {
+            return std::chrono::duration_cast<std::chrono::minutes>(end - start).count()
+        }
         auto secondSteady() {
             return std::chrono::duration_cast<std::chrono::seconds>(end - start).count();
         }
