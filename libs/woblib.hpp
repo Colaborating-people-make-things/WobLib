@@ -47,10 +47,10 @@ namespace woblib {
             return;
         }
         auto hourSteady() {
-            return std::chrono::duration_cast<std::chrono::hours>(end - start).count()
+            return std::chrono::duration_cast<std::chrono::hours>(end - start).count();
         }
         auto minuteSteady() {
-            return std::chrono::duration_cast<std::chrono::minutes>(end - start).count()
+            return std::chrono::duration_cast<std::chrono::minutes>(end - start).count();
         }
         auto secondSteady() {
             return std::chrono::duration_cast<std::chrono::seconds>(end - start).count();
